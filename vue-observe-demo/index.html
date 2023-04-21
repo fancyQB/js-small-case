@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box {
+            margin: 200px auto;
+            height: 300px;
+            width: 300px;
+            border-radius: 20%;
+            border: 1px solid #c3c2c2;
+            padding: 20px;
+            font-size: 30px;
+            color: aqua;
+        }
+        li {
+            list-style: none;
+        }
+        .box ul {
+            margin: 30px;
+        }
+        .box>ul > * + * {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul>
+            <li class="firstname">姓: <span></span></li>
+            <li class="lastname">名: <span></span></li>
+            <li class="birth">年龄: <span></span></li>
+        </ul>
+    </div>
+    <input type="text" oninput="obj.username = this.value">
+    <input type="date" oninput="obj.birth = this.value">
+    <script src="myVue.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
